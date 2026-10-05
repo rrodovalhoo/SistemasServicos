@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Serviços</h2>
+
+        <div class="campo">
+            <label for="cliente">Nome do Cliente:</label>
+            <input type="text" id="cliente" placeholder="Ex: Maria">
+        </div>
+
+        <div class="campo">
+            <label for="servico">Selecione o Serviço:</label>
+            <select id="servico">
+                <option value="">-- Selecione um serviço --</option>
+                <option value="formatacao">Formatação de Computador</option>
+                <option value="limpeza">Limpeza Interna / Manutenção</option>
+                <option value="instalacao">Instalação de Software</option>
+                <option value="troca_peca">Troca de Peça / Hardware</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" value="1" min="1">
+        </div>
+
+        <button onclick="calcularServico()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
